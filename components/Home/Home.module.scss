@@ -1,0 +1,14 @@
+.container {
+  .home {
+    height: 500px;
+    position: relative;
+    img {
+      height: 100%;
+    }
+    .bookNow {
+      position: absolute;
+      top: 50%;
+      transform: translate(5%, 50%);
+    }
+  }
+}

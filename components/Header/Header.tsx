@@ -9,7 +9,7 @@ const HeaderComponent: React.FC = () => {
   const router = useRouter();
   console.log(router.pathname);
   return (
-    <nav className={`${HeaderStyle.header} flex flex-end`}>
+    <nav className={`${HeaderStyle.header} flex justify-end`}>
       <ul className={`${HeaderStyle.menu} flex justify-between basis-6/12`}>
         {HEADER_MENU_ITEMS.map((header) => (
           <li
