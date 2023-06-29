@@ -7,7 +7,14 @@ import {
 } from "../../constants/footer";
 
 const FooterComponent: React.FC = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      {/* <p>Author: Dr Kannan</p>
+      <p>
+        <a href="mailto:hege@example.com">drkannan@example.com</a>
+      </p> */}
+    </footer>
+  );
 };
 
 export default FooterComponent;

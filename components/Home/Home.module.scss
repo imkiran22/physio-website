@@ -1,14 +1,34 @@
 .container {
   .home {
-    height: 500px;
+    height: 90vh;
     position: relative;
+    @media only screen and (max-width: 600px) {
+      height: auto;
+    }
     img {
       height: 100%;
+      @media only screen and (max-width: 600px) {
+        height: 50%;
+      }
     }
     .bookNow {
       position: absolute;
-      top: 50%;
-      transform: translate(5%, 50%);
+      top: 20%;
+      right: 5%;
+      // background: theme("colors.white");
+      transform: translate(0%, 100%);
+      span {
+        color: theme("colors.zinc.900");
+      }
+      button {
+        color: theme("colors.white");
+      }
+      @media only screen and (max-width: 600px) {
+        top: 25%;
+        transform: none;
+        font-size: 0.7em;
+        right: 8%;
+      }
     }
   }
 }
