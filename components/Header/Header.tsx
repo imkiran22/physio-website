@@ -68,7 +68,9 @@ const HeaderComponent: React.FC = () => {
                 }`}
                 key={header.key}
               >
-                <Link href={header.key}>{header.label}</Link>
+                <Link onClick={hideDrawer} href={header.key}>
+                  {header.label}
+                </Link>
               </Menu.Item>
             ))}
           </Menu>

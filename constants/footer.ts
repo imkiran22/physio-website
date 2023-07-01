@@ -1,5 +1,4 @@
-export const COPY_RIGHT =
-  "Define Skin Hair & Laser Clinic ©2022 All rights reserved";
+export const COPY_RIGHT = "Dr S Kannan ©2023 All rights reserved";
 
 export const FB_PROFILE =
   "https://www.facebook.com/defineskinhairclinic-112627771411004";
