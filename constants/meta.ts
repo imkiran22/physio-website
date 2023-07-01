@@ -1,4 +1,4 @@
-export const ABOUT_DOCTOR = `Welcome to the world of expert orthopedic physiotherapy care. I am
+export const aboutDoctor = `Welcome to the world of expert orthopedic physiotherapy care. I am
 Dr. S. Kannan, an esteemed Orthopedic Physiotherapist with over 20
 years of experience. I provide exceptional care to patients in
 Yeshwanthpur, Bangalore, and beyond at Medicare Diagnostic
@@ -21,25 +21,13 @@ mobility together.`;
 
 export const title = `Dr. S. Kannan is an esteemed Orthopedic Physiotherapist with a passion for helping patients regain their strength and mobility. With over 20 years of experience in this field, he had dedicated himself to providing exceptional care to patients in Yeshwanthpur, Bangalore, and beyond.`;
 
-export const SLOGAN = "The Caring Hands You Deserve.";
-// export const TITLE = "ABOUT";
+export const serviceButtonText = "See services";
 
-// export const FUNCTIONING_TITLE = "FUNCTIONING HOURS";
+export const aboutTitle = "About Me";
 
-// export const FUNCTIONING_DAYS = [
-//   {
-//     key: "monday-friday",
-//     label: "Monday - Friday",
-//     value: "10 AM - 7 PM",
-//   },
-//   {
-//     key: "saturday",
-//     label: "Saturday",
-//     value: "10 AM - 7 PM",
-//   },
-//   {
-//     key: "sunday",
-//     label: "Sunday",
-//     value: "Closed",
-//   },
-// ];
+export const testimonialQuote = `Empowering patients with personalized orthopedic
+physiotherapy for enhanced mobility. With 20+ years of
+expertise, I provide exceptional care in Yeshwanthpur,
+Bangalore. Through cutting-edge techniques, I ensure optimal
+outcomes. Rooted in empathy, my approach fosters
+collaboration.`;

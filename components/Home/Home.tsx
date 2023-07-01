@@ -1,7 +1,11 @@
 import React from "react";
-import { title } from "../../constants/meta";
+import { serviceButtonText, title } from "../../constants/meta";
 const imagePath = "/dr_kannan.jpeg";
 import { Col, Row, Image, Typography, Button } from "antd";
+import {
+  doctorField,
+  doctorWithQualifications,
+} from "../../constants/doctor-details";
 const { Title, Paragraph, Text } = Typography;
 
 const HomeComponent: React.FC = ({}) => {
@@ -11,20 +15,30 @@ const HomeComponent: React.FC = ({}) => {
       className={"home_container"}
     >
       <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
-        <Image preview={false} width={"80%"} height={"100%"} src={imagePath} />
+        <Image
+          preview={false}
+          width={"80%"}
+          height={"100%"}
+          src={imagePath}
+          alt="doctor image"
+        />
       </Col>
       <Col xs={24} sm={12} md={12} lg={12} xl={12}>
         <Typography>
-          <Title className="home_main-title">Dr S Kannan, BPTh/BPT.</Title>
+          <Title className="home_main-title">{doctorWithQualifications}</Title>
           <Title underline={true} level={2} className="home_sub-title">
-            Physiotherapist
+            {doctorField}
           </Title>
           <Paragraph>
             <Text className="home_description">{title}</Text>
           </Paragraph>
         </Typography>
-        <Button type="primary" size="large">
-          See services
+        <Button
+          type="primary"
+          size="large"
+          style={{ fontFamily: "Quicksand", letterSpacing: "2px" }}
+        >
+          {serviceButtonText}
         </Button>
       </Col>
     </Row>

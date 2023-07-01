@@ -7,9 +7,9 @@ import {
   Typography,
   theme,
   Button,
-  Blockquote,
+  // Blockquote,
 } from "antd";
-import { ABOUT_DOCTOR } from "../../constants/meta";
+import { aboutDoctor } from "../../constants/meta";
 const { Title, Paragraph, Text } = Typography;
 
 const { useToken } = theme;
@@ -22,7 +22,7 @@ const TestimonialComponent: React.FC = () => {
       className="about"
       style={{ background: token.token.red2 }}
     >
-      <Col
+      {/* <Col
         xs={24}
         sm={12}
         md={12}
@@ -74,7 +74,7 @@ const TestimonialComponent: React.FC = () => {
             </Text>
           </Paragraph>
         </Typography>
-      </Col>
+      </Col> */}
     </Row>
   );
 };
