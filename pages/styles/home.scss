@@ -1,0 +1,31 @@
+.home_container {
+  padding: 2em;
+  background: #bfbfbf !important;
+  .home_main-title {
+    font-size: 42px !important;
+    font-family: Quicksand;
+  }
+
+  .home_sub-title {
+    font-size: 36px !important;
+    text-transform: capitalize;
+    font-family: Quicksand;
+  }
+
+  .home_description {
+    font-size: 24px !important;
+    font-family: Quicksand;
+  }
+
+  @media (max-width: 600px) {
+    .home_main-title {
+      font-size: 22px !important;
+    }
+    .home_sub-title {
+      font-size: 18px !important;
+    }
+    .home_description {
+      font-size: 14px !important;
+    }
+  }
+}

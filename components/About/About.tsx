@@ -1,26 +1,59 @@
 import React from "react";
-import { DOCTOR_INTRO } from "../../constants/meta";
+import { Col, Row, Card, Image, Typography, theme, Button } from "antd";
+import { ABOUT_DOCTOR } from "../../constants/meta";
+const { Title, Paragraph, Text } = Typography;
 
-const imagePath = "/dr_kannan.jpeg";
+const { useToken } = theme;
+const imagePath = "/physio.jpg";
 const AboutComponent: React.FC = () => {
+  const token = useToken();
   return (
-    <div className="text-md p-3 text-indigo-900 rounded-sm drop-shadow-xl flex flex-col">
-      <div className="profile-card image-container drop-shadow-sm shadow-lg shadow-gray-100 pb-4 inline-flex">
-        <img
+    <Row
+      gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }}
+      className="about"
+      style={{ background: token.token.red2 }}
+    >
+      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+        <Typography>
+          <Title className="about_main-title">About Me</Title>
+          <Paragraph>
+            <Text className="about_description">{ABOUT_DOCTOR}</Text>
+          </Paragraph>
+        </Typography>
+      </Col>
+      <Col
+        xs={24}
+        sm={12}
+        md={12}
+        lg={12}
+        xl={12}
+        className={"about_image_container"}
+      >
+        <Image
+          className="about_image_container_image"
+          preview={false}
+          width={"100%"}
+          height={"100%"}
           src={imagePath}
-          className="h-60 w-72 md:scale-100 xs:scale-75 pr-2 rounded-full"
         />
-        <div className="profile-details">
-          <span>Fill your profile details here...</span>
-        </div>
-      </div>
-      <p className="whitespace-pre-line text-start tracking-wide md:leading-8 xs:leading-5">
-        <span className="flex font-black underline decoration-2">
-          Hi I am Dr S Kannan
-        </span>
-        <span className="">{DOCTOR_INTRO}</span>
-      </p>
-    </div>
+        <Typography className="about_image_container_testimonial">
+          <Paragraph>
+            <Text
+              className="about_image_container_testimonial_description"
+              style={{ color: token.token.colorWhite }}
+            >
+              <blockquote>
+                "Empowering patients with personalized orthopedic physiotherapy
+                for enhanced mobility. With 20+ years of expertise, I provide
+                exceptional care in Yeshwanthpur, Bangalore. Through
+                cutting-edge techniques, I ensure optimal outcomes. Rooted in
+                empathy, my approach fosters collaboration."
+              </blockquote>
+            </Text>
+          </Paragraph>
+        </Typography>
+      </Col>
+    </Row>
   );
 };
 

@@ -1,0 +1,51 @@
+.logo {
+  float: left;
+  color: #f5f5f5;
+  letter-spacing: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  right: 2%;
+  font-family: Quicksand;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: red;
+  font-family: Quicksand;
+}
+
+.menu-item {
+  font-family: Quicksand;
+}
+
+@media (max-width: 400px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    font-size: 18px;
+    color: #f5f5f5;
+  }
+}
+
+.active {
+  background: #eb2f96 !important;
+  &:hover {
+    background: #eb2f96 !important;
+  }
+}
+
+.ant-menu-item-selected {
+  background: none !important;
+}

@@ -1,24 +1,33 @@
 import React from "react";
-import { DOCTOR_INTRO, SLOGAN } from "../../constants/meta";
-import HomeStyle from "./Home.module.scss";
+import { title } from "../../constants/meta";
+const imagePath = "/dr_kannan.jpeg";
+import { Col, Row, Image, Typography, Button } from "antd";
+const { Title, Paragraph, Text } = Typography;
 
-const homeImagePath = "/physio.jpg";
-
-const HomeComponent: React.FC = () => {
+const HomeComponent: React.FC = ({}) => {
   return (
-    <div className={`text-3xl font-bold ${HomeStyle.container}`}>
-      <div className={`${HomeStyle.home}`}>
-        <img src={homeImagePath} className={"w-full bg-cover"} />
-        <div
-          className={`text-layer flex flex-col ${HomeStyle.bookNow} xs:items-right md:items-left md:text-4xl xs:text-xs xs:max-w-32 md:max-w-md xs:leading-10 md:leading-10`}
-        >
-          <span className="text-black-800">{SLOGAN}</span>
-          <button className="rounded-sm bg-indigo-500 p-1 md:w-72 xs:w-full">
-            Book now
-          </button>
-        </div>
-      </div>
-    </div>
+    <Row
+      gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }}
+      className={"home_container"}
+    >
+      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
+        <Image preview={false} width={"80%"} height={"100%"} src={imagePath} />
+      </Col>
+      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+        <Typography>
+          <Title className="home_main-title">Dr S Kannan, BPTh/BPT.</Title>
+          <Title underline={true} level={2} className="home_sub-title">
+            Physiotherapist
+          </Title>
+          <Paragraph>
+            <Text className="home_description">{title}</Text>
+          </Paragraph>
+        </Typography>
+        <Button type="primary" size="large">
+          See services
+        </Button>
+      </Col>
+    </Row>
   );
 };
 
