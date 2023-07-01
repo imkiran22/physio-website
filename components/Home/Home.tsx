@@ -10,16 +10,12 @@ const { Title, Paragraph, Text } = Typography;
 
 const HomeComponent: React.FC = ({}) => {
   return (
-    <Row
-      gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }}
-      className={"home_container"}
-    >
-      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
+    <Row gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }} className={"home"}>
+      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={0}>
         <Image
           preview={false}
-          width={"80%"}
-          height={"100%"}
           src={imagePath}
+          className={"home_image"}
           alt="doctor image"
         />
       </Col>
