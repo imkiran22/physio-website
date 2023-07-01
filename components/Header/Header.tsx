@@ -23,7 +23,9 @@ const HeaderComponent: React.FC = () => {
   console.log(router.pathname);
   return (
     <Header>
-      <div className="logo">DR KANNAN</div>
+      <div className="logo">
+        <Link href={"/"}>DR KANNAN</Link>
+      </div>
       <div className="desktop-menu">
         <Menu
           theme="dark"

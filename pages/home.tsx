@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <>
       <HomeComponent></HomeComponent>
-      <AboutComponent></AboutComponent>
+      {/* <AboutComponent></AboutComponent>
       <ServicesComponent></ServicesComponent>
-      <ContactComponent></ContactComponent>
+      <ContactComponent></ContactComponent> */}
     </>
   );
 };

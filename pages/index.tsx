@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import HomeComponent from "../components/Home/Home";
+import AboutComponent from "../components/About/About";
+import ContactComponent from "../components/Contact/Contact";
+import ServicesComponent from "../components/Services/Services";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +17,9 @@ const Home: NextPage = () => {
       <main className={"main"}>
         <div className="App">
           <HomeComponent />
+          <AboutComponent></AboutComponent>
+          <ServicesComponent></ServicesComponent>
+          <ContactComponent></ContactComponent>
         </div>
       </main>
     </div>
