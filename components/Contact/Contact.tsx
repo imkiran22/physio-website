@@ -3,6 +3,7 @@ import { Col, Row, Image, Typography, theme } from "antd";
 import { ContactMetaList, Social } from "../../constants/contact";
 import { ServicesDescription } from "../../constants/meta";
 import SocialMediaComponent from "../SocialMedia/SocialMedia";
+import Link from "next/link";
 
 const { useToken } = theme;
 const imagePath = "./physio.jpg";
@@ -33,7 +34,9 @@ const ContactComponent: React.FC = () => {
                 <span className="pl-10">{list.title}</span>
               </Title>
               <Text style={{ fontSize: token.fontSizeHeading4 }}>
-                {list.value}
+                <Link style={{ color: token["geekblue-10"] }} href={list.href}>
+                  {list.value}
+                </Link>
               </Text>
             </Paragraph>
           ))}

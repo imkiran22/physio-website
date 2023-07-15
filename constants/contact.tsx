@@ -11,11 +11,13 @@ export const ContactMetaList = [
   {
     title: "Phone",
     value: "+91 78926 36110",
+    href: "tel:+917892636110",
     icon: <PhoneOutlined />,
   },
   {
     title: "Email",
     value: "drskannan@gmail.com",
+    href: "mailto:drskannan@gmail.com",
     icon: <MailOutlined />,
   },
 ];
