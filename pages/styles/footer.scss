@@ -1,8 +1,10 @@
+@import "variables.scss";
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Quicksand;
+  font-size: $sub-header;
   padding-top: 10px;
   a {
     padding-left: 10px;
@@ -23,4 +25,14 @@
   line-height: 10px;
   font-family: Quicksand;
   font-weight: bold;
+  font-size: $sub-header;
+}
+
+@media (max-width: 600px) {
+  .social-media {
+    font-size: $res-sub-header;
+  }
+  .copyright {
+    font-size: $res-sub-header;
+  }
 }

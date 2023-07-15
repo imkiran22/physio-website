@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .services {
   padding: 2em;
   .ant-list-split .ant-list-item {
@@ -6,7 +8,7 @@
     font-family: Quicksand;
   }
   &_main-title {
-    font-size: 42px !important;
+    font-size: $main-header;
     font-family: Quicksand;
   }
 
@@ -14,36 +16,38 @@
     .ant-list-item {
       .ant-list-item-meta {
         .ant-list-item-meta-title {
-          font-size: 18px !important;
+          font-size: $sub-header;
+          text-transform: capitalize;
         }
         .ant-list-item-meta-description {
-          font-size: 18px !important;
+          font-size: $sub-header;
         }
       }
     }
   }
 
   @media (max-width: 600px) {
+    padding: 1em;
     &_image {
       height: 50% !important;
     }
     &_main-title {
-      font-size: 22px !important;
+      font-size: $res-main-header;
     }
     &_sub-title {
-      font-size: 18px !important;
+      font-size: $res-middle-header;
     }
     &_description {
-      font-size: 14px !important;
+      font-size: $res-sub-header;
     }
     .ant-list {
       .ant-list-item {
         .ant-list-item-meta {
           .ant-list-item-meta-title {
-            font-size: 14px !important;
+            font-size: $res-sub-header;
           }
           .ant-list-item-meta-description {
-            font-size: 14px !important;
+            font-size: $res-sub-header;
           }
         }
       }

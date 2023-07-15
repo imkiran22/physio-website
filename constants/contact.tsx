@@ -16,8 +16,8 @@ export const ContactMetaList = [
   },
   {
     title: "Email",
-    value: "drskannan@gmail.com",
-    href: "mailto:drskannan@gmail.com",
+    value: "kannan.physio@yahoo.com",
+    href: "mailto:Kannan.physio@yahoo.com",
     icon: <MailOutlined />,
   },
 ];
@@ -32,7 +32,7 @@ export const Social = {
     },
     {
       icon: <InstagramOutlined />,
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/sundarajankannan/",
       colorCode: "#f5222d",
     },
   ],

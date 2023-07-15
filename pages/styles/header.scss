@@ -1,13 +1,11 @@
+@import "variables.scss";
+
 $geek-blue-4: #85a5ff;
 
-#header {
-  position: sticky;
-  width: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  box-sizing: content-box;
+#header-el {
+  .ant-menu-title-content {
+    font-size: $sub-header;
+  }
 }
 
 .logo {
@@ -15,7 +13,7 @@ $geek-blue-4: #85a5ff;
   color: $geek-blue-4;
   letter-spacing: 4px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: $middle-header;
   position: relative;
   right: 2%;
   font-family: Quicksand;
@@ -25,6 +23,10 @@ $geek-blue-4: #85a5ff;
   display: none;
   background-color: red;
   font-family: Quicksand;
+  .ant-btn-icon {
+    position: relative;
+    top: -3px;
+  }
 }
 
 .menu-item {
@@ -32,6 +34,14 @@ $geek-blue-4: #85a5ff;
 }
 
 @media (max-width: 600px) {
+  .logo {
+    font-size: $res-middle-header;
+  }
+  #header-el {
+    .ant-menu-title-content {
+      font-size: $res-sub-header;
+    }
+  }
   .desktop-menu {
     display: none;
   }

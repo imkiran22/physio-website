@@ -18,26 +18,27 @@ const ContactComponent: React.FC = () => {
       className="contact"
       style={{ background: token["geekblue-3"] }}
     >
-      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
+      <Col xs={24} sm={8} md={8} lg={8} xl={8}>
         <Image
           preview={false}
-          width={"75%"}
-          height={"94%"}
           src={imagePath}
           className={"contact_image"}
           alt="doctor image"
         />
       </Col>
-      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+      <Col xs={24} sm={16} md={16} lg={16} xl={16}>
         <Typography>
           <Title className="contact_main-title">{contactHeader}</Title>
           {ContactMetaList.map((list) => (
             <Paragraph key={list.value}>
-              <Title level={2} className="contact_phone-title">
+              <Text className="contact_phone-title">
                 {list.icon}
                 <span className="pl-10">{list.title}</span>
-              </Title>
-              <Text style={{ fontSize: token.fontSizeHeading4 }}>
+              </Text>
+              <Text
+                className="contact_phone-value pl-6"
+                style={{ fontSize: token.fontSizeHeading4 }}
+              >
                 <Link style={{ color: "black" }} href={list.href}>
                   {list.value}
                 </Link>
@@ -45,16 +46,14 @@ const ContactComponent: React.FC = () => {
             </Paragraph>
           ))}
           <Paragraph>
-            <Title level={2} className="contact_social">
-              {Social.title}
-            </Title>
+            <Title className="contact_social">{Social.title}</Title>
             <SocialMediaComponent />
           </Paragraph>
           <Paragraph>
-            <Title level={4} underline={false} className="contact_social">
-              {"Disclaimer"}
-            </Title>
-            <Text>{ServicesDescription}</Text>
+            <Text underline={false} className="contact_social">
+              {"Kindly note:"}
+            </Text>
+            <Text className="contact_social-value">{ServicesDescription}</Text>
           </Paragraph>
         </Typography>
       </Col>

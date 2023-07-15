@@ -1,16 +1,18 @@
+@import "variables.scss";
 .about {
   padding: 2em;
   &_main-title {
-    font-size: 42px !important;
+    font-size: $main-header;
     text-transform: capitalize;
     font-family: Quicksand;
   }
   &_description {
-    font-size: 18px !important;
+    font-size: $sub-header;
     font-family: Quicksand;
   }
   &_image_container {
     position: relative;
+    margin-top: 3.6em;
     &_image {
       filter: brightness(50%);
     }
@@ -20,22 +22,24 @@
       margin: 10px;
 
       &_description {
-        font-size: 24px;
+        font-size: $sub-header;
         font-family: Quicksand;
       }
     }
   }
   @media (max-width: 600px) {
+    padding: 1em;
     &_main-title {
-      font-size: 22px !important;
+      font-size: $res-main-header;
     }
     &_description {
-      font-size: 14px !important;
+      font-size: $res-sub-header;
     }
     &_image_container {
+      margin-top: 0;
       &_testimonial {
         &_description {
-          font-size: 14px !important;
+          font-size: $res-sub-header;
         }
       }
     }

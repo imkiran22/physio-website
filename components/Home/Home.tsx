@@ -21,17 +21,18 @@ const HomeComponent: React.FC = ({}) => {
       className={"home"}
       style={{ background: token["geekblue-2"] }}
     >
-      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
-        <Image
-          preview={false}
-          width={"50%"}
-          src={imagePath}
-          className={"home_image"}
-          alt="doctor image"
-        />
-      </Col>
-      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+      {/* <Col xs={4} sm={4} md={4} lg={4} xl={4}>
+        
+      </Col> */}
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <Typography>
+          <Image
+            preview={false}
+            width={"20%"}
+            src={imagePath}
+            className={"home_image"}
+            alt="doctor image"
+          />
           <Title className="home_main-title">{doctorWithQualifications}</Title>
           <Title underline={true} level={2} className="home_sub-title">
             {doctorField}
@@ -44,7 +45,7 @@ const HomeComponent: React.FC = ({}) => {
         <Link target={"_blank"} href={PRACTO_LINK}>
           <Button
             type="primary"
-            size="large"
+            size="middle"
             style={{ fontFamily: "Quicksand", letterSpacing: "2px" }}
           >
             {" "}
