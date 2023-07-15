@@ -18,6 +18,7 @@ const SocialMediaComponent: React.FC = () => {
             padding: "0px 3px",
             fontSize: token.fontSizeHeading4,
           }}
+          key={i.colorCode}
         >
           <Link
             style={{

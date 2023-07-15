@@ -28,7 +28,7 @@ const ContactComponent: React.FC = () => {
         <Typography>
           <Title className="contact_main-title">{contactHeader}</Title>
           {ContactMetaList.map((list) => (
-            <Paragraph>
+            <Paragraph key={list.value}>
               <Title level={2} className="contact_phone-title">
                 {list.icon}
                 <span className="pl-10">{list.title}</span>
