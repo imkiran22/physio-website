@@ -1,11 +1,5 @@
 .home {
   padding: 2em;
-
-  &_image {
-    width: 100%;
-    height: 70vh !important;
-    transform: translate(42%, 8%);
-  }
   &_main-title {
     font-size: 42px !important;
     font-family: Quicksand;
@@ -32,9 +26,8 @@
     &_description {
       font-size: 14px !important;
     }
-    &_image {
-      height: 50vh;
-      transform: none;
-    }
+    // &_image {
+    //   height: 50%;
+    // }
   }
 }

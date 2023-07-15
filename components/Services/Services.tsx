@@ -7,7 +7,11 @@ const { useToken } = theme;
 const ServicesComponent: React.FC = () => {
   const { token } = useToken();
   return (
-    <Row className="services" style={{ background: token.geekblue2 }}>
+    <Row
+      gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }}
+      className="services"
+      style={{ background: token.geekblue2 }}
+    >
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <Typography>
           <Title className="services_main-title">{ServicesTitle}</Title>

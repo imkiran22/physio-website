@@ -24,6 +24,7 @@ const HomeComponent: React.FC = ({}) => {
       <Col xs={24} sm={12} md={12} lg={12} xl={12}>
         <Image
           preview={false}
+          width={"50%"}
           src={imagePath}
           className={"home_image"}
           alt="doctor image"
