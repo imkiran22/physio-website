@@ -7,6 +7,7 @@ $geek-blue-4: #85a5ff;
   top: 0;
   right: 0;
   z-index: 1000;
+  box-sizing: content-box;
 }
 
 .logo {
@@ -30,7 +31,7 @@ $geek-blue-4: #85a5ff;
   font-family: Quicksand;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .desktop-menu {
     display: none;
   }
@@ -46,7 +47,7 @@ $geek-blue-4: #85a5ff;
     right: 0;
     margin: 16px;
     font-size: 18px;
-    color: #f5f5f5;
+    color: $geek-blue-4;
   }
 }
 

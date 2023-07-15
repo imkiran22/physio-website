@@ -22,7 +22,7 @@ const HeaderComponent: React.FC = () => {
   };
 
   return (
-    <Header id="header">
+    <Header className="header">
       <div className="logo">
         <Link href={"/"}>DR KANNAN</Link>
       </div>

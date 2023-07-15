@@ -21,11 +21,9 @@ const HomeComponent: React.FC = ({}) => {
       className={"home"}
       style={{ background: token["geekblue-2"] }}
     >
-      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={2}>
+      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
         <Image
           preview={false}
-          width={"70%"}
-          height={"70vh"}
           src={imagePath}
           className={"home_image"}
           alt="doctor image"
