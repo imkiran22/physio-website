@@ -1,17 +1,14 @@
 import React from "react";
-import { Row, Col, Typography, List, Avatar, Image } from "antd";
-import {
-  ServicesDescription,
-  ServicesList,
-  ServicesTitle,
-  ServiceSub,
-} from "../../constants/meta";
-const { Title, Paragraph, Text } = Typography;
+import { Row, Col, Typography, List, Image, theme } from "antd";
+import { ServicesList, ServicesTitle } from "../../constants/meta";
+const { Title, Paragraph } = Typography;
+const { useToken } = theme;
 
 const ServicesComponent: React.FC = () => {
+  const { token } = useToken();
   return (
-    <Row className="services">
-      <Col xs={24} sm={14} md={14} lg={14} xl={14}>
+    <Row className="services" style={{ background: token.geekblue2 }}>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <Typography>
           <Title className="services_main-title">{ServicesTitle}</Title>
           <Paragraph>
@@ -19,7 +16,7 @@ const ServicesComponent: React.FC = () => {
             <List
               itemLayout="horizontal"
               dataSource={ServicesList}
-              renderItem={(item, index) => (
+              renderItem={(item) => (
                 <List.Item>
                   <List.Item.Meta
                     // avatar={<Avatar src={item.image} />}
@@ -31,17 +28,6 @@ const ServicesComponent: React.FC = () => {
             />
           </Paragraph>
         </Typography>
-      </Col>
-      <Col xs={24} sm={10} md={10} lg={10} xl={10}>
-        <Image
-          className="about_image_container_image"
-          preview={false}
-          width={"100%"}
-          height={"50vh"}
-          src={"/physio-cover.jpg"}
-          alt="about container image"
-          style={{ float: "right" }}
-        />
       </Col>
     </Row>
   );

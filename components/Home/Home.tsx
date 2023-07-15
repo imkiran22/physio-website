@@ -6,14 +6,21 @@ import {
   doctorWithQualifications,
   PRACTO_LINK,
 } from "../../constants/doctor-details";
+import { theme } from "antd";
 import Link from "next/link";
 const { Title, Paragraph, Text } = Typography;
 
 const imagePath = "/kannan-selfie-mask.jpeg";
+const { useToken } = theme;
 
 const HomeComponent: React.FC = ({}) => {
+  const { token } = useToken();
   return (
-    <Row gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }} className={"home"}>
+    <Row
+      gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }}
+      className={"home"}
+      style={{ background: token["geekblue-2"] }}
+    >
       <Col xs={24} sm={12} md={12} lg={12} xl={12} push={2}>
         <Image
           preview={false}

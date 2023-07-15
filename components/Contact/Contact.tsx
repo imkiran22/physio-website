@@ -12,7 +12,7 @@ const { Title, Paragraph, Text } = Typography;
 const ContactComponent: React.FC = () => {
   const { token } = useToken();
   return (
-    <Row className="contact" style={{ background: token.purple1 }}>
+    <Row className="contact" style={{ background: token["geekblue-4"] }}>
       <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
         <Image
           preview={false}

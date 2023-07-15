@@ -15,9 +15,9 @@ const { useToken } = theme;
 const { Text } = Typography;
 
 const FooterComponent: React.FC = () => {
-  const token = useToken();
+  const { token } = useToken();
   return (
-    <Footer className="footer" style={{ background: token.token["purple-1"] }}>
+    <Footer className="footer" style={{ background: token.geekblue4 }}>
       <div className="copyright">{COPY_RIGHT}</div>
       <Text className="social-media" strong={true}>
         <span className="title">{FOLLOW_US}</span>
