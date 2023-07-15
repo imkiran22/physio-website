@@ -20,7 +20,7 @@ const HeaderComponent: React.FC = () => {
   const hideDrawer = () => {
     setState({ drawerVisible: false, activeMenuItem: router.pathname });
   };
-  console.log(router.pathname);
+
   return (
     <Header>
       <div className="logo">

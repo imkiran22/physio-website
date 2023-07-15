@@ -1,19 +1,24 @@
 import React from "react";
 import { serviceButtonText, title } from "../../constants/meta";
-const imagePath = "/dr_kannan.jpeg";
 import { Col, Row, Image, Typography, Button } from "antd";
 import {
   doctorField,
   doctorWithQualifications,
+  PRACTO_LINK,
 } from "../../constants/doctor-details";
+import Link from "next/link";
 const { Title, Paragraph, Text } = Typography;
+
+const imagePath = "/kannan-selfie-mask.jpeg";
 
 const HomeComponent: React.FC = ({}) => {
   return (
     <Row gutter={{ xs: 24, sm: 24, md: 24, lg: 24 }} className={"home"}>
-      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={0}>
+      <Col xs={24} sm={12} md={12} lg={12} xl={12} push={2}>
         <Image
           preview={false}
+          width={"70%"}
+          height={"70vh"}
           src={imagePath}
           className={"home_image"}
           alt="doctor image"
@@ -29,13 +34,17 @@ const HomeComponent: React.FC = ({}) => {
             <Text className="home_description">{title}</Text>
           </Paragraph>
         </Typography>
-        <Button
-          type="primary"
-          size="large"
-          style={{ fontFamily: "Quicksand", letterSpacing: "2px" }}
-        >
-          {serviceButtonText}
-        </Button>
+
+        <Link target={"_blank"} href={PRACTO_LINK}>
+          <Button
+            type="primary"
+            size="large"
+            style={{ fontFamily: "Quicksand", letterSpacing: "2px" }}
+          >
+            {" "}
+            {serviceButtonText}
+          </Button>
+        </Link>
       </Col>
     </Row>
   );

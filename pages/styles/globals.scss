@@ -2,6 +2,8 @@
 @import "./home.scss";
 @import "./about.scss";
 @import "./footer.scss";
+@import "./services.scss";
+@import "./contact.scss";
 
 html,
 body {
@@ -17,4 +19,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.pl-4 {
+  padding-left: 4px;
+}
+
+.pl-6 {
+  padding-left: 6px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-2 {
+  padding-left: 2px;
 }

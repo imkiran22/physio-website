@@ -9,7 +9,7 @@ import {
 const { Title, Paragraph, Text } = Typography;
 
 const { useToken } = theme;
-const imagePath = "/physio.jpg";
+const imagePath = "/treatment.jpeg";
 const AboutComponent: React.FC = () => {
   const token = useToken();
   return (
@@ -18,27 +18,36 @@ const AboutComponent: React.FC = () => {
       className="about"
       style={{ background: token.token.red2 }}
     >
-      <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+      <Col xs={24} sm={14} md={14} lg={14} xl={14}>
         <Typography>
           <Title className="about_main-title">{aboutTitle}</Title>
           <Paragraph>
+            {/* <Image
+              className="about_image_container_image"
+              preview={false}
+              width={"20%"}
+              height={"auto"}
+              src={"/dr-kannan-passport.jpeg"}
+              alt="about container image"
+              style={{ float: "right" }}
+            /> */}
             <Text className="about_description">{aboutDoctor}</Text>
           </Paragraph>
         </Typography>
       </Col>
       <Col
         xs={24}
-        sm={12}
-        md={12}
-        lg={12}
-        xl={12}
+        sm={10}
+        md={10}
+        lg={10}
+        xl={10}
         className={"about_image_container"}
       >
         <Image
           className="about_image_container_image"
           preview={false}
           width={"100%"}
-          height={"100%"}
+          height={"50vh"}
           src={imagePath}
           alt="about container image"
         />
