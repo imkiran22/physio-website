@@ -28,7 +28,7 @@ export const Social = {
     {
       icon: <FacebookFilled />,
       url: "https://facebook.com",
-      colorCode: "#096dd9",
+      colorCode: "#001d66",
     },
     {
       icon: <InstagramOutlined />,

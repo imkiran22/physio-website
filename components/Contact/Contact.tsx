@@ -13,7 +13,7 @@ const { Title, Paragraph, Text } = Typography;
 const ContactComponent: React.FC = () => {
   const { token } = useToken();
   return (
-    <Row className="contact" style={{ background: token["geekblue-4"] }}>
+    <Row className="contact" style={{ background: token["geekblue-3"] }}>
       <Col xs={24} sm={12} md={12} lg={12} xl={12} push={1}>
         <Image
           preview={false}
@@ -34,7 +34,7 @@ const ContactComponent: React.FC = () => {
                 <span className="pl-10">{list.title}</span>
               </Title>
               <Text style={{ fontSize: token.fontSizeHeading4 }}>
-                <Link style={{ color: token["geekblue-10"] }} href={list.href}>
+                <Link style={{ color: "black" }} href={list.href}>
                   {list.value}
                 </Link>
               </Text>

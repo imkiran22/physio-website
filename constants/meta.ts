@@ -12,7 +12,7 @@ Currently, I am dedicated to providing comprehensive physiotherapy care at Medic
 
 Please feel free to explore the rest of my profile to learn more about my qualifications, expertise, and the services I offer. I look forward to assisting you on your journey to optimal health and well-being.`;
 
-export const serviceButtonText = "Book your appointment";
+export const serviceButtonText = "Book Your Appointment";
 
 export const aboutTitle = "About Me";
 

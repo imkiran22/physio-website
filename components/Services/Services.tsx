@@ -12,15 +12,13 @@ const ServicesComponent: React.FC = () => {
         <Typography>
           <Title className="services_main-title">{ServicesTitle}</Title>
           <Paragraph>
-            {/* <Text className="services_description">{ServiceSub}</Text> */}
             <List
               itemLayout="horizontal"
               dataSource={ServicesList}
               renderItem={(item) => (
                 <List.Item>
                   <List.Item.Meta
-                    // avatar={<Avatar src={item.image} />}
-                    title={<a href="https://ant.design">{item.title}</a>}
+                    title={item.title}
                     description={item.description}
                   />
                 </List.Item>
