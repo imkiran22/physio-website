@@ -1,3 +1,7 @@
 .services {
   padding: 2em;
+  .ant-list-split .ant-list-item {
+    position: relative;
+    right: 17px;
+  }
 }
