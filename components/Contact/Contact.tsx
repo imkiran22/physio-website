@@ -4,6 +4,7 @@ import { ContactMetaList, Social } from "../../constants/contact";
 import { ServicesDescription } from "../../constants/meta";
 import SocialMediaComponent from "../SocialMedia/SocialMedia";
 import Link from "next/link";
+import { PRACTO_LINK } from "../../constants/doctor-details";
 
 const { useToken } = theme;
 const imagePath = "./physio.jpg";
@@ -46,12 +47,30 @@ const ContactComponent: React.FC = () => {
             </Paragraph>
           ))}
           <Paragraph>
+            <Title className="contact_social">{"Practo Appoinment"}</Title>
+            <Text
+              style={{
+                padding: "0px 3px",
+                fontSize: token.fontSizeHeading3,
+              }}
+            >
+              <Link target={"_blank"} href={PRACTO_LINK}>
+                <Image
+                  preview={false}
+                  src={"/practo.png"}
+                  width={"40px"}
+                  height={"40px"}
+                />
+              </Link>
+            </Text>
+          </Paragraph>
+          <Paragraph>
             <Title className="contact_social">{Social.title}</Title>
             <SocialMediaComponent />
           </Paragraph>
           <Paragraph>
             <Text underline={false} className="contact_social">
-              {"Kindly note:"}
+              {"Kindly Note:"}
             </Text>
             <Text className="contact_social-value">{ServicesDescription}</Text>
           </Paragraph>

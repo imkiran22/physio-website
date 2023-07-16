@@ -1,6 +1,5 @@
 @import "variables.scss";
 .about {
-  padding: 2em;
   &_main-title {
     font-size: $main-header;
     text-transform: capitalize;
@@ -28,7 +27,7 @@
     }
   }
   @media (max-width: 600px) {
-    padding: 1em;
+    padding: 0.75em !important;
     &_main-title {
       font-size: $res-main-header;
     }

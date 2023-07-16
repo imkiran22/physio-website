@@ -11,7 +11,13 @@ const { Text } = Typography;
 const FooterComponent: React.FC = () => {
   const { token } = useToken();
   return (
-    <Footer id="footer" style={{ background: token.geekblue3 }}>
+    <Footer
+      id="footer"
+      style={{
+        background: token.geekblue3,
+        borderTop: `0.5px solid ${token.geekblue1}`,
+      }}
+    >
       <div className="copyright">{COPY_RIGHT}</div>
       <Text className="social-media" strong={true}>
         <span className="title">{FOLLOW_US}</span>

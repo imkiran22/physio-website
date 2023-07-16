@@ -1,14 +1,18 @@
 @import "variables.scss";
 
 .contact {
-  padding: 2em;
-
   &_image {
     margin-top: 10%;
   }
   &_main-title {
     font-size: $main-header;
     font-family: Quicksand;
+    text-transform: uppercase;
+  }
+
+  &_phone-value {
+    border-bottom: 2px solid #1677ff;
+    letter-spacing: 2px;
   }
 
   &_phone-title,
@@ -31,18 +35,23 @@
   }
 
   @media (max-width: 600px) {
-    padding: 1em;
+    padding: 0.75em !important;
     &_main-title {
       font-size: $res-main-header;
     }
     &_phone-title,
     &_phone-value,
-    &_social {
+    &_social,
+    &_social-value {
       font-size: $res-middle-header;
     }
     &_image {
       height: 50vh;
       transform: none;
+    }
+    &_phone-value {
+      border-bottom: 1px solid #1677ff;
+      letter-spacing: 1px;
     }
   }
 }

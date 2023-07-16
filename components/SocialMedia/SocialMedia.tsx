@@ -31,7 +31,7 @@ const SocialMediaComponent: React.FC = () => {
           </Link>
         </Text>
       ))}
-      <Text
+      {/* <Text
         style={{
           padding: "0px 3px",
           fontSize: token.fontSizeHeading3,
@@ -46,7 +46,7 @@ const SocialMediaComponent: React.FC = () => {
             style={{ verticalAlign: "sub", position: "absolute", top: "2px" }}
           />
         </Link>
-      </Text>
+      </Text> */}
     </>
   );
 };

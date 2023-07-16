@@ -5,4 +5,4 @@ export const FB_PROFILE =
 
 export const IG_PROFILE = "https://www.instagram.com/define.skin.hair.clinic";
 
-export const FOLLOW_US = "Follow us on";
+export const FOLLOW_US = "Follow me on";

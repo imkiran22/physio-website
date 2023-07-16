@@ -21,20 +21,16 @@ const HomeComponent: React.FC = ({}) => {
       className={"home"}
       style={{ background: token["geekblue-2"] }}
     >
-      {/* <Col xs={4} sm={4} md={4} lg={4} xl={4}>
-        
-      </Col> */}
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
         <Typography>
           <Image
             preview={false}
-            width={"20%"}
             src={imagePath}
             className={"home_image"}
             alt="doctor image"
           />
           <Title className="home_main-title">{doctorWithQualifications}</Title>
-          <Title underline={true} level={2} className="home_sub-title">
+          <Title underline={true} className="home_sub-title">
             {doctorField}
           </Title>
           <Paragraph>
