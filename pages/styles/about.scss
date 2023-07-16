@@ -22,6 +22,9 @@
       position: absolute;
       top: 0;
       margin: 10px;
+      code {
+        font-size: $sub-header;
+      }
 
       &_description {
         font-size: $sub-header;
@@ -42,6 +45,9 @@
     &_image_container {
       margin-top: 0;
       &_testimonial {
+        code {
+          font-size: $res-sub-header;
+        }
         &_description {
           font-size: $res-sub-header;
         }

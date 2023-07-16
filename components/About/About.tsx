@@ -1,12 +1,8 @@
 import React from "react";
 import { Col, Row, Image, Typography, theme } from "antd";
-import {
-  aboutDoctor,
-  aboutTitle,
-  testimonialQuote,
-} from "../../constants/meta";
+import { aboutDoctor, aboutTitle } from "../../constants/meta";
 
-const { Title, Paragraph, Text } = Typography;
+const { Paragraph, Text } = Typography;
 
 const { useToken } = theme;
 const imagePath = "/treatment.jpeg";
@@ -51,12 +47,12 @@ const AboutComponent: React.FC = () => {
           alt="about container image"
         />
         <Typography className="about_image_container_testimonial">
-          <Title
+          <Text
             className="about_image_container_testimonial_title"
             style={{ color: token["geekblue-2"] }}
           >
             <code>Amrit Noronha said</code>
-          </Title>
+          </Text>
           <Paragraph>
             <Text
               className="about_image_container_testimonial_description"
@@ -65,12 +61,12 @@ const AboutComponent: React.FC = () => {
               <blockquote>{quotes[0]}</blockquote>
             </Text>
           </Paragraph>
-          <Title
+          <Text
             className="about_image_container_testimonial_title"
             style={{ color: token["geekblue-2"] }}
           >
             <code>Verfied user said</code>
-          </Title>
+          </Text>
           <Paragraph>
             <Text
               className="about_image_container_testimonial_description"
@@ -86,5 +82,3 @@ const AboutComponent: React.FC = () => {
 };
 
 export default AboutComponent;
-
-//border-gray-200 border
