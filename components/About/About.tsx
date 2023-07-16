@@ -5,6 +5,7 @@ import {
   aboutTitle,
   testimonialQuote,
 } from "../../constants/meta";
+
 const { Title, Paragraph, Text } = Typography;
 
 const { useToken } = theme;
@@ -42,12 +43,39 @@ const AboutComponent: React.FC = () => {
           alt="about container image"
         />
         <Typography className="about_image_container_testimonial">
+          <Title
+            className="about_image_container_testimonial_title"
+            style={{ color: token["geekblue-2"] }}
+          >
+            <code>Amrit Noronha said</code>
+          </Title>
           <Paragraph>
             <Text
               className="about_image_container_testimonial_description"
-              style={{ color: token.colorWhite }}
+              style={{ color: token["geekblue-2"] }}
             >
-              <blockquote>{testimonialQuote}</blockquote>
+              <blockquote>
+                "Great attitude and careful and considerate doctor. He was very
+                caring and helped in explaining the issue and what he needs to
+                do."
+              </blockquote>
+            </Text>
+          </Paragraph>
+          <Title
+            className="about_image_container_testimonial_title"
+            style={{ color: token["geekblue-2"] }}
+          >
+            <code>Verfied user said</code>
+          </Title>
+          <Paragraph>
+            <Text
+              className="about_image_container_testimonial_description"
+              style={{ color: token["geekblue-2"] }}
+            >
+              <blockquote>
+                "He's very kind and caring and expert in his specialization and
+                available in all needy times. I recommened him with smile. "
+              </blockquote>
             </Text>
           </Paragraph>
         </Typography>
