@@ -8,18 +8,18 @@
   }
   &_main-title {
     font-size: $main-header;
-    font-family: Quicksand;
+    font-family: poppins;
   }
 
   &_sub-title {
     font-size: $middle-header;
     text-transform: capitalize;
-    font-family: Quicksand;
+    font-family: poppins;
   }
 
   &_description {
     font-size: $sub-header;
-    font-family: Quicksand;
+    font-family: poppins;
   }
 
   @media (max-width: 600px) {
@@ -34,7 +34,7 @@
       font-size: $res-sub-header;
     }
     .ant-image {
-      width: 40%;
+      width: 40% !important;
       padding-right: 1em;
       width: 20%;
     }

@@ -5,6 +5,7 @@ $geek-blue-4: #85a5ff;
 #header-el {
   .ant-menu-title-content {
     font-size: $sub-header;
+    font-family: poppins;
   }
 }
 
@@ -16,13 +17,13 @@ $geek-blue-4: #85a5ff;
   font-size: $middle-header;
   position: relative;
   right: 2%;
-  font-family: Quicksand;
+  font-family: poppins;
 }
 
 .mobile-menu {
   display: none;
   background-color: red;
-  font-family: Quicksand;
+  font-family: poppins;
   .ant-btn-icon {
     position: relative;
     top: -3px;
@@ -30,7 +31,7 @@ $geek-blue-4: #85a5ff;
 }
 
 .menu-item {
-  font-family: Quicksand;
+  font-family: poppins;
 }
 
 @media (max-width: 600px) {

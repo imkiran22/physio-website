@@ -3,11 +3,11 @@
   &_main-title {
     font-size: $main-header;
     text-transform: capitalize;
-    font-family: Quicksand;
+    font-family: poppins;
   }
   &_description {
     font-size: $sub-header;
-    font-family: Quicksand;
+    font-family: poppins;
   }
   &_image_container {
     position: relative;
@@ -22,7 +22,7 @@
 
       &_description {
         font-size: $sub-header;
-        font-family: Quicksand;
+        font-family: poppins;
       }
     }
   }

@@ -42,7 +42,7 @@ const HomeComponent: React.FC = ({}) => {
           <Button
             type="primary"
             size="middle"
-            style={{ fontFamily: "Quicksand", letterSpacing: "2px" }}
+            style={{ fontFamily: "poppins", letterSpacing: "2px" }}
           >
             {" "}
             {serviceButtonText}
