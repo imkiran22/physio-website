@@ -2,8 +2,6 @@ import {
   PhoneOutlined,
   MailOutlined,
   FacebookFilled,
-  InstagramFilled,
-  TwitterCircleFilled,
   InstagramOutlined,
 } from "@ant-design/icons";
 

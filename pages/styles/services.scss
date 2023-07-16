@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .services {
+  @extend .animation-entry;
   .ant-list-split .ant-list-item {
     position: relative;
     right: 17px;
@@ -9,6 +10,8 @@
   &_main-title {
     font-size: $main-header;
     font-family: poppins;
+    font-weight: 500;
+    @extend .main_title_underlined;
   }
 
   .ant-list {
@@ -17,6 +20,8 @@
         .ant-list-item-meta-title {
           font-size: $sub-header;
           text-transform: capitalize;
+          border-bottom: 1.5px solid #10239e;
+          letter-spacing: 2px;
         }
         .ant-list-item-meta-description {
           font-size: $sub-header;
@@ -27,6 +32,7 @@
 
   @media (max-width: 600px) {
     padding: 0.75em !important;
+
     &_image {
       height: 50% !important;
     }

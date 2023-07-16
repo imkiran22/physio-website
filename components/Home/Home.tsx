@@ -29,10 +29,8 @@ const HomeComponent: React.FC = ({}) => {
             className={"home_image"}
             alt="doctor image"
           />
-          <Title className="home_main-title">{doctorWithQualifications}</Title>
-          <Title underline={true} className="home_sub-title">
-            {doctorField}
-          </Title>
+          <div className="home_main-title">{doctorWithQualifications}</div>
+          <div className="home_sub-title">{doctorField}</div>
           <Paragraph>
             <Text className="home_description">{title}</Text>
           </Paragraph>
@@ -41,7 +39,7 @@ const HomeComponent: React.FC = ({}) => {
         <Link target={"_blank"} href={PRACTO_LINK}>
           <Button
             type="primary"
-            size="middle"
+            size="large"
             style={{ fontFamily: "poppins", letterSpacing: "2px" }}
           >
             {" "}

@@ -1,13 +1,17 @@
 @import "variables.scss";
 
 .contact {
+  @extend .animation-entry;
   &_image {
-    margin-top: 10%;
+    margin-top: 2.2%;
   }
   &_main-title {
     font-size: $main-header;
     font-family: poppins;
     text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0.4em;
+    @extend .main_title_underlined;
   }
 
   &_phone-value {
@@ -18,7 +22,7 @@
   &_phone-title,
   &_phone-value,
   &_social {
-    font-size: $middle-header;
+    font-size: $sub-header;
     font-family: poppins;
     font-weight: bold;
     display: block;

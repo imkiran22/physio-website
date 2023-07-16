@@ -1,20 +1,27 @@
 @import "variables.scss";
 
 .home {
+  @extend .animation-entry;
   .ant-image {
     float: left;
     padding-right: 1em;
     width: 19%;
   }
   &_main-title {
-    font-size: $main-header;
+    font-size: $middle-header;
     font-family: poppins;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #1d39c4 !important;
   }
 
   &_sub-title {
     font-size: $middle-header;
     text-transform: capitalize;
     font-family: poppins;
+    font-weight: 500;
+    @extend .main_title_underlined;
   }
 
   &_description {

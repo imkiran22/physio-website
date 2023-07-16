@@ -5,3 +5,24 @@ $sub-header: 18px !important;
 $res-main-header: 22px !important;
 $res-middle-header: 14px !important;
 $res-sub-header: 12px !important;
+
+.main_title_underlined {
+  text-decoration: underline;
+  text-decoration-color: #2f54eb;
+  text-underline-offset: 5px;
+}
+
+.animation-entry {
+  animation-name: entry;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+}
+
+@keyframes entry {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

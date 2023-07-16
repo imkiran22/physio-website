@@ -25,11 +25,12 @@ const ContactComponent: React.FC = () => {
           src={imagePath}
           className={"contact_image"}
           alt="doctor image"
+          width={"100%"}
         />
       </Col>
       <Col xs={24} sm={16} md={16} lg={16} xl={16}>
         <Typography>
-          <Title className="contact_main-title">{contactHeader}</Title>
+          <div className="contact_main-title">{contactHeader}</div>
           {ContactMetaList.map((list) => (
             <Paragraph key={list.value}>
               <Text className="contact_phone-title">
@@ -51,15 +52,14 @@ const ContactComponent: React.FC = () => {
             <Text
               style={{
                 padding: "0px 3px",
-                fontSize: token.fontSizeHeading3,
               }}
             >
               <Link target={"_blank"} href={PRACTO_LINK}>
                 <Image
                   preview={false}
                   src={"/practo.png"}
-                  width={"40px"}
-                  height={"40px"}
+                  width={"25px"}
+                  height={"25px"}
                 />
               </Link>
             </Text>

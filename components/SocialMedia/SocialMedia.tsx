@@ -31,22 +31,6 @@ const SocialMediaComponent: React.FC = () => {
           </Link>
         </Text>
       ))}
-      {/* <Text
-        style={{
-          padding: "0px 3px",
-          fontSize: token.fontSizeHeading3,
-        }}
-      >
-        <Link target={"_blank"} href={PRACTO_LINK}>
-          <Image
-            preview={false}
-            src={"/practo.png"}
-            width={"20px"}
-            height={"21px"}
-            style={{ verticalAlign: "sub", position: "absolute", top: "2px" }}
-          />
-        </Link>
-      </Text> */}
     </>
   );
 };

@@ -19,7 +19,7 @@ const AboutComponent: React.FC = () => {
     >
       <Col xs={24} sm={14} md={14} lg={14} xl={14}>
         <Typography>
-          <Title className="about_main-title">{aboutTitle}</Title>
+          <div className="about_main-title">{aboutTitle}</div>
           <Paragraph>
             <Text className="about_description">{aboutDoctor}</Text>
           </Paragraph>
