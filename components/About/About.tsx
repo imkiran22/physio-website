@@ -10,6 +10,14 @@ const { Title, Paragraph, Text } = Typography;
 
 const { useToken } = theme;
 const imagePath = "/treatment.jpeg";
+
+const quotes = [
+  `"Great attitude and careful and considerate doctor. He was
+  very caring and helped in explaining the issue and what he needs
+  to do"`,
+  `"He's very kind and caring and expert in his specialization
+and available in all needy times. I recommened him with smile."`,
+];
 const AboutComponent: React.FC = () => {
   const { token } = useToken();
   return (
@@ -54,11 +62,7 @@ const AboutComponent: React.FC = () => {
               className="about_image_container_testimonial_description"
               style={{ color: token["geekblue-2"] }}
             >
-              <blockquote>
-                "Great attitude and careful and considerate doctor. He was very
-                caring and helped in explaining the issue and what he needs to
-                do."
-              </blockquote>
+              <blockquote>{quotes[0]}</blockquote>
             </Text>
           </Paragraph>
           <Title
@@ -72,10 +76,7 @@ const AboutComponent: React.FC = () => {
               className="about_image_container_testimonial_description"
               style={{ color: token["geekblue-2"] }}
             >
-              <blockquote>
-                "He's very kind and caring and expert in his specialization and
-                available in all needy times. I recommened him with smile. "
-              </blockquote>
+              <blockquote>{quotes[1]}</blockquote>
             </Text>
           </Paragraph>
         </Typography>

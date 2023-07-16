@@ -6,6 +6,9 @@ import SocialMediaComponent from "../SocialMedia/SocialMedia";
 import Link from "next/link";
 import { PRACTO_LINK } from "../../constants/doctor-details";
 
+const PractoTitle = "Practo Appoinment";
+const disclaimer = "Kindly Note:";
+
 const { useToken } = theme;
 const imagePath = "./physio.jpg";
 const contactHeader = "Get In Touch";
@@ -48,7 +51,7 @@ const ContactComponent: React.FC = () => {
             </Paragraph>
           ))}
           <Paragraph>
-            <Title className="contact_social">{"Practo Appoinment"}</Title>
+            <Title className="contact_social">{PractoTitle}</Title>
             <Text
               style={{
                 padding: "0px 3px",
@@ -60,6 +63,7 @@ const ContactComponent: React.FC = () => {
                   src={"/practo.png"}
                   width={"25px"}
                   height={"25px"}
+                  alt="practo"
                 />
               </Link>
             </Text>
@@ -70,7 +74,7 @@ const ContactComponent: React.FC = () => {
           </Paragraph>
           <Paragraph>
             <Text underline={false} className="contact_social">
-              {"Kindly Note:"}
+              {disclaimer}
             </Text>
             <Text className="contact_social-value">{ServicesDescription}</Text>
           </Paragraph>
