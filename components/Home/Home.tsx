@@ -36,7 +36,7 @@ const HomeComponent: React.FC = ({}) => {
           </Paragraph>
         </Typography>
 
-        <Link target={"_blank"} href={PRACTO_LINK}>
+        {/* <Link target={"_blank"} href={PRACTO_LINK}>
           <Button
             type="primary"
             size="large"
@@ -45,7 +45,7 @@ const HomeComponent: React.FC = ({}) => {
             {" "}
             {serviceButtonText}
           </Button>
-        </Link>
+        </Link> */}
       </Col>
     </Row>
   );

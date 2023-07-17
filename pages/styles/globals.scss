@@ -37,7 +37,15 @@ a {
   padding-left: 2px;
 }
 
+$header-color: #030852;
+
 #footer,
 #header-el {
   margin-right: -16px;
+  background: $header-color;
+  .desktop-menu {
+    ul {
+      background: $header-color;
+    }
+  }
 }

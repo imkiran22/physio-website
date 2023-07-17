@@ -30,6 +30,7 @@
         font-size: $sub-header;
         font-family: poppins;
         line-height: 2em;
+        letter-spacing: 2px;
         color: #d6e4ff !important;
       }
     }
@@ -50,6 +51,7 @@
         }
         &_description {
           font-size: $res-sub-header;
+          letter-spacing: 1px;
         }
       }
     }

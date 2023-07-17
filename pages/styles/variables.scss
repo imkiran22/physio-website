@@ -14,8 +14,8 @@ $res-sub-header: 12px !important;
 
 .animation-entry {
   animation-name: entry;
-  animation-timing-function: ease-in-out;
-  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
 }
 
 @keyframes entry {

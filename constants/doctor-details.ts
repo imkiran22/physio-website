@@ -12,4 +12,5 @@ export const PRACTO_LINK =
 
 export const doctorField = "Physiotherapist";
 
-export const doctorWithQualifications = "Dr S Kannan, BPTh/BPT.";
+export const doctorWithQualifications = "Dr S Kannan, BPT, F.O.R.";
+//FELLOWSHIP IN ORTHROPEDIC REHABILTATION

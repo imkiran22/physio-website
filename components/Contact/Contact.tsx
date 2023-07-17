@@ -50,7 +50,7 @@ const ContactComponent: React.FC = () => {
               </Text>
             </Paragraph>
           ))}
-          <Paragraph>
+          {/* <Paragraph>
             <Title className="contact_social">{PractoTitle}</Title>
             <Text
               style={{
@@ -67,7 +67,7 @@ const ContactComponent: React.FC = () => {
                 />
               </Link>
             </Text>
-          </Paragraph>
+          </Paragraph> */}
           <Paragraph>
             <Title className="contact_social">{Social.title}</Title>
             <SocialMediaComponent />

@@ -65,7 +65,7 @@ const AboutComponent: React.FC = () => {
             className="about_image_container_testimonial_title"
             style={{ color: token["geekblue-2"] }}
           >
-            <code>Verfied user said</code>
+            <code>Verified user said</code>
           </Text>
           <Paragraph>
             <Text
