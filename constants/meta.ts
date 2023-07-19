@@ -1,6 +1,8 @@
 export const aboutDoctor = `I embarked on an extraordinary journey of education and experience, beginning in 1988 when I enrolled in the Indian Air Force (IAF) as a paramedic combatant member. I excelled in my ground service training, receiving the prestigious award for physical fitness. In 1999, I successfully completed a certified physiotherapy course (IAF), further enhancing my skills within the IAF. Continuing my dedication to professional growth, I accomplished my Diploma in Physical Therapy (DPT) in 2003 (IAF), earning distinction for my outstanding performance.
 
-In 2007, I proudly graduated with a Bachelor's degree in Physical Therapy (BPT), solidifying my knowledge and expertise in the field. As a testament to my commitment to excellence, I became a member of the Indian Association of Chartered Physiotherapists (IACP) in 2010.
+In 2007, I proudly graduated with a Bachelor's degree in Physical Therapy (BPT), solidifying my knowledge and expertise in the field. As a testament to my commitment to excellence, I became a member of the Indian Association of Chartered Physiotherapists (IACP) in 2010 and
+
+successfully completed Fellowship in Orthopedic Rehabilitation in 2011.
 
 To expand my horizons and gain comprehensive experience, I had the privilege of serving as the in-charge of training for physiotherapy courses conducted within the IAF from 2004 to 2008. During this time, I had the opportunity to work closely with Asha School of Special Education, where I gained invaluable firsthand experience in handling a diverse range of electrotherapy equipment. Specifically, I specialized in rehabilitating wounded casualties, enabling them to regain their physical capabilities following curative surgeries.
 
@@ -25,7 +27,7 @@ collaboration.`;
 
 export const ServicesTitle = `Services`;
 
-export const ServicesDescription = `Please note that direct consultations are currently unavailable at my clinic for various reasons. However, I offer convenient online consultation services for patients seeking advice and personalized treatment plans. You can schedule an online consultation with me until 9 PM. These virtual consultations provide a convenient way to access physiotherapy expertise from the comfort of your own home. To book an online consultation, please contact us through the provided channels. Thank you for your understanding, and I look forward to assisting you in achieving your health and wellness goals through our online services.`;
+export const ServicesDescription = `I offer online consultation services for personalized physiotherapy treatment plans. Schedule appointments until 9 PM. Contact me to book a consultation. Achieve your health goals from home. Thank you for your understanding.`;
 
 export const ServiceSub = `These are list of services that i currently offer`;
 

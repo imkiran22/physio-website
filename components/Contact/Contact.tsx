@@ -7,7 +7,7 @@ import Link from "next/link";
 import { PRACTO_LINK } from "../../constants/doctor-details";
 
 const PractoTitle = "Practo Appoinment";
-const disclaimer = "Kindly Note:";
+const disclaimer = "Online Consultations";
 
 const { useToken } = theme;
 const imagePath = "./physio.jpg";

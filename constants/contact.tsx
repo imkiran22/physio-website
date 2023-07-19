@@ -4,18 +4,19 @@ import {
   FacebookFilled,
   InstagramOutlined,
 } from "@ant-design/icons";
+import { CELL, EMAIL_ID } from "./doctor-details";
 
 export const ContactMetaList = [
   {
     title: "Phone",
-    value: "+91 78926 36110",
-    href: "tel:+917892636110",
+    value: CELL,
+    href: `tel:${CELL}`,
     icon: <PhoneOutlined />,
   },
   {
     title: "Email",
-    value: "kannan.physio@yahoo.com",
-    href: "mailto:Kannan.physio@yahoo.com",
+    value: EMAIL_ID,
+    href: `mailto:${EMAIL_ID}`,
     icon: <MailOutlined />,
   },
 ];

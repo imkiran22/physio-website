@@ -1,11 +1,12 @@
 export const ADDRESS = `
-  171-177, 1st Main Rd, A Block, Milk Colony, Subramanyanagar,2 State, Rajajinagar, Bengaluru, Karnataka 560055`;
+No.56, Banshankari nilaya, 
+1st main, 1st cross Abbigere 
+Bangalore 560090`;
 
 export const MAP = "https://goo.gl/maps/E68iGKLULr9wJbDj8";
 
-export const MOBILE = "+91 7829186454";
-
-export const EMAIL = "drkannan@gmail.com";
+export const EMAIL_ID = "kannansundarajan28@gmail.com";
+export const CELL = "+91 78926 36110";
 
 export const PRACTO_LINK =
   "https://www.practo.com/Bangalore/doctor/dr-s-kannan-physiotherapist/info";
